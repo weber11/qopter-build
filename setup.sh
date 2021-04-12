@@ -1,3 +1,7 @@
+# QOPTER Build script
+# 
+# built for Ubuntu 20.04
+#
 sudo apt update all
 sudo apt install openssh-server python2 curl locate git
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
