@@ -15,4 +15,3 @@ git clone https://github.com/trustedsec/tap
 sudo ./tap/setup.py
 
 echo "If you didn't get some disastrous error, we should be done. Nessus should be started, but it needs final setup (username and license key).  Tap should have launched... if not, stop the tap service, kill the process manually and restart."
-
