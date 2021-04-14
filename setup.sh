@@ -3,7 +3,7 @@
 # built for Ubuntu 20.04
 #
 sudo apt update
-sudo apt install openssh-server python2 curl locate
+sudo apt install openssh-server python2 curl locate python3-pip
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 sudo python2 get-pip.py
 scp qopter@50.19.106.107:Nessus* ./
@@ -18,6 +18,7 @@ yes
 EOF
 sudo dpkg -i Nessus*
 cd ../
+sudo pip3 install pcryptodome
 git clone https://github.com/trustedsec/tap
 cd tap
 sudo ./setup.py
