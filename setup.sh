@@ -6,8 +6,7 @@ sudo apt update
 sudo apt install openssh-server python2 curl locate python3-pip
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 sudo python2 get-pip.py
-scp qopter@50.19.106.107:Nessus* ./
-scp qopter@50.19.106.107:ptf* ./
+scp -T 'qopter@50.19.106.107:Nessus* ptf*' ./
 cd ../
 git clone https://github.com/trustedsec/ptf
 cp qopter-build/ptf_custom_list.txt ./ptf/modules/custom_list/list.txt
